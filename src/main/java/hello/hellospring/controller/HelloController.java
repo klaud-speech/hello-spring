@@ -20,6 +20,7 @@ public class HelloController {
         return "hello-template";
     }
 
+    // Body로 받음..
     @GetMapping("hello-string")
     @ResponseBody
     public String helloString(@RequestParam("name") String name){
